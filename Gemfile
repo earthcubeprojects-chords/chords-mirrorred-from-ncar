@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'bootsnap'
 gem 'rails', '~> 5.2.0'
 gem 'mysql2', '~> 0.5'
 gem 'influxdb', '~> 0.6'
@@ -56,6 +57,7 @@ group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'letter_opener'
+  gem 'listen'
 
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
