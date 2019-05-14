@@ -80,7 +80,7 @@ def service_install():
         os.system('ln -s /usr/bin/docker-compose')
 
     os.chdir(chords_basedir)
-    chords_service_url = 'https://github.com/NCAR/chords/raw/' + os.environ['GIT_BRANCH'] + '/bin/chords_service/chords.service'    
+    chords_service_url = 'https://github.com/earthcubeprojects-chords/chords/raw/' + os.environ['GIT_BRANCH'] + '/bin/chords_service/chords.service'    
     os.system('curl -L ' + chords_service_url + ' > chords.service')
     os.system('systemctl enable /var/lib/chords/chords.service')
     os.system('systemctl daemon-reload')

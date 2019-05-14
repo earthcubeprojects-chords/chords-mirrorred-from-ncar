@@ -303,7 +303,7 @@
                   "if pgrep ruby &> /dev/null ; then pkill -TERM ruby ; fi\n",
                   
                   "# Install the CHORDS Rails application\n",
-                  "git clone https://github.com/NCAR/chords.git\n",
+                  "git clone https://github.com/earthcubeprojects-chords/chords.git\n",
 
                   "# Configure the CHORDS Rails application\n",
                   "cd /home/ec2-user/chords\n",
